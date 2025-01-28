@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird - Sound Controlled</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style for the overall page */
+        body {
+            display: flex; /* Use flexbox to structure the layout */
+            flex-direction: row; /* Arrange elements horizontally in a row */
+            justify-content: center; /* Centers the content horizontally */
+            align-items: flex-start; /* Aligns the content at the top vertically */
+            font-family: 'Inter', Arial, sans-serif; /* Uses the font family 'Inter' if available, otherwise Arial or sans-serif */
+            margin: 0; /* Removes default margins */
+            padding: 20px; /* Adds padding around the page */
+            background-color: #f4f4f9; /* Light gray background color */
+            color: #333; /* Default text color */
+        }
+
+        /* Style for the info section */
+        #info {
+            width: 220px; /* Width of the information section */
+            padding: 20px; /* Inner padding around the content */
+            background-color: #ffffff; /* White background color for the information */
+            border: 1px solid #e0e0e0; /* Light border around the information box */
+            border-radius: 8px; /* Slightly rounded corners */
+            margin-right: 20px; /* Adds space to the right of the information box */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a light shadow for depth */
+        }
+
+        /* Style for the heading in the info section */
+        #info h2 {
+            font-size: 20px; /* Size of the heading */
+            color: #222; /* Darker text color for the heading */
+            margin-bottom: 16px; /* Space below the heading */
+        }
+
+        /* Style for the list in the info section */
+        #info ul {
+            list-style: none; /* Removes the default bullet list style */
+            padding: 0; /* Removes default padding for the list */
+            margin: 0; /* Removes default margin for the list */
+        }
+
+        /* Style for list items in the info section */
+        #info ul li {
+            font-size: 16px; /* Size of the list text */
+            color: #555; /* Medium gray text color */
+            margin-bottom: 10px; /* Space between list items */
+            line-height: 1.5; /* Adds some spacing between lines */
+            display: flex;
+            align-items: center; /* Centers text vertically within list items */
+        }
+
+        /* Adds a bullet point before each list item */
+        #info ul li::before {
+            content: "•"; /* Adds a bullet point before each list item */
+            color: #555; /* Same color as the text */
+            font-weight: bold; /* Makes the bullet bold */
+            margin-right: 8px; /* Adds some space between the bullet and the text */
+        }
+
+        /* Style for the paragraph in the info section */
+        #info p {
+            font-size: 14px; /* Smaller text for the closing comment */
+            color: #777; /* Lighter gray text color */
+            margin-top: 20px; /* Creates some space above the text */
+            line-height: 1.5; /* Adds some spacing between lines */
+        }
+
+        /* Style for the canvas */
+        canvas {
+            display: block; /* Removes inline behavior for the canvas */
+            background-color: #87CEEB; /* Sets a light blue background color for the game */
+            border: 2px solid #000; /* Black border around the canvas for clear separation */
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <!-- A section containing information about the game -->
+        <h2>How to Play</h2>
+        <!-- Heading for the information section -->
+        <ul>
+            <!-- Bullet list providing game instructions -->
+            <li>Create sound to make the bird fly upward.</li>
+            <!-- Explains how to control the bird -->
+            <li>Avoid obstacles and the ground.</li>
+            <!-- Instructs the player to avoid obstacles and the ground -->
+            <li>Pass obstacles to earn points.</li>
+            <!-- Explains how to score points -->
+            <li>Press 'R' to restart.</li>
+            <!-- Provides information on how to restart the game -->
+        </ul>
+        <p>Easy to play, hard to master. How many points can you score?</p>
+        <!-- Closing encouragement for the player -->
+    </div>
+
+    <!-- Links to external JavaScript files for running the game -->
+    <script src="p5.js"></script>
+    <!-- The p5.js library used to create the game's graphics -->
+    <script src="p5.sound.js"></script>
+    <!-- The p5.sound library that handles sound input -->
+    <script src="script.js"></script>
+    <!-- Our custom JavaScript file containing the game's logic -->
+</body>
+</html>

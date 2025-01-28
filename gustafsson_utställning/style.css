@@ -1,0 +1,36 @@
+/* Sets basic page settings */
+body {
+  margin: 0; /* Removes default margins from the browser */
+  padding: 0; /* Removes default padding from the browser */
+  font-family: Arial, sans-serif; /* Sets a simple and readable font family */
+  display: flex; /* Makes the body function as a flexbox container */
+  flex-direction: column; /* Arranges content in a column layout */
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+  height: 100vh; /* Sets the height to 100% of the viewport height */
+  background-color: #f0f0f0; /* Sets a light gray background color */
+}
+
+/* Style for the canvas element used for the game */
+canvas {
+  border: 2px solid #333; /* Adds a dark border around the canvas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a light shadow under the canvas for depth */
+}
+
+/* Style for paragraphs used for text on the page */
+p {
+  color: #333; /* Sets a dark gray text color */
+  font-size: 1.2em; /* Slightly increases the text size for better readability */
+  margin-top: 10px; /* Adds space above the paragraph */
+  text-align: center; /* Centers the text */
+}
+
+/* Style for a container holding the content */
+.container {
+  text-align: center; /* Centers the text and content in the container */
+  max-width: 600px; /* Limits the width to 600px for a better layout */
+  padding: 20px; /* Adds inner padding around the content */
+  background-color: #ffffff; /* Sets a white background color for contrast */
+  border-radius: 10px; /* Rounds the corners for a softer appearance */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a light shadow to lift the container from the background */
+}
