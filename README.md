@@ -1,6 +1,6 @@
 Yappy Bird 🐦🎮
 
-📢 Check out Yappy bird live here: 👉 https://cesargustafsson.github.io/Yappy-bird/
+📢 Check out Yappy bird live here: 👉 https://cesargustafsson.github.io/Yappy-Bird/
 
 Yappy Bird is a **voice-controlled** version of the classic **Flappy Bird** game, created as part of an interaction design project. The player controls the bird by producing sounds such as claps or whistles, instead of using traditional tapping or button presses. 🎤💨
 
